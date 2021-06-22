@@ -1,3 +1,9 @@
+playground/pipeline.yaml
+playground/scripts
+playground/output
+playground/pipeline.png
+example/output/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
