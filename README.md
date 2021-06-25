@@ -1,5 +1,7 @@
 # Breaking down the Jupyter notebook monolith: Building reliable notebook-based pipelines with Ploomber
 
+This poster is an interactive demo of Ploomber, an open-source library to create reproducible pipelines with Jupyter.
+
 Scipy 2021.
 
 Author: [Eduardo Blancas](https://twitter.com/edublancas)
