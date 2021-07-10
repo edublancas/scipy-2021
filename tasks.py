@@ -8,8 +8,8 @@ import jupytext
 
 @task
 def setup(c):
-    c.run('conda env create --file environment.yml --force')
-    c.run('conda env export --no-build --file environment.lock.yml'
+    c.run('conda env create --file environment.dev.yml --force')
+    c.run('conda env export --no-build --file environment.yml'
           ' --name scipy-2021')
 
 
