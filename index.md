@@ -65,7 +65,9 @@ cd example
 ploomber build
 ```
 
-That's it! You just ran your first Ploomber pipeline! Let's now see how the different pieces come together by re-creating the example pipeline from scratch.
+### That's it! You just ran your first Ploomber pipeline!
+
+Let's now see how the different pieces come together by re-creating the example pipeline from scratch.
 
 ## Creating a pipeline in Ploomber
 
@@ -83,7 +85,7 @@ tasks:
 
 The previous pipeline has a single task (`script.py`) and generates two outputs: `output/executed.ipynb` and `output/data.csv`. You may be wondering why we have a notebook as an output: Ploomber converts scripts to notebooks before execution; hence, our script is considered the source and the notebook a byproduct of the execution. The use of scripts as sources (instead of notebooks) makes it simpler to use git. However, this does not mean you have to give up interactive development since Ploomber integrates with Jupyter, allowing you to edit scripts as notebooks.
 
-Let's now build a simple four-step pipeline:
+**Let's now build a simple four-step pipeline**:
 
 ```yaml
 tasks:
@@ -139,7 +141,13 @@ Image('playground/pipeline.png')
 ```
 
 <!-- #region -->
-Our pipeline doesn't have any structure yet, but we can easily add it. We want to get data first, then process the data, then fit a model. Let's edit those files.
+Our pipeline doesn't have any structure yet, but we can easily add it. We want to:
+
+1. Get data
+2. Process it
+3. Fit a model
+
+Let's edit those files.
 
 #### Step 2: Open `playground/scripts/features-petal.py` as a notebook by right-clicking on it and then `Open With` -> `Notebook`:
 
@@ -342,4 +350,4 @@ Here are a few resources to dig deeper:
 * E-mail: [contact@ploomber.io](mailto:contact@ploomber.io)
 * [Twitter](https://twitter.com/ploomber)
 * [Google form](https://forms.gle/Xf9h1Q2TGoSk15NEA)
-* [Join us on Slack](https://join.slack.com/t/ploomber-io/shared_invite/zt-rzu2e9f6-kaWgCfsLY~xeJ9vG9EIuBw)
+* [Join us on Slack](http://community.ploomber.io)
