@@ -15,3 +15,19 @@ This poster is an interactive notebook that shows how to develop a notebook-base
 **Note:** It may take a few seconds for the notebook to load.
 
 Got questions? Reach out to me via [Twitter](https://twitter.com/edublancas).
+
+## Running it locally
+
+If you prefer to run things locally (requires `conda`):
+
+```sh
+pip install invoke
+
+invoke setup
+
+conda activate scipy-2021
+
+jupyter lab
+```
+
+Then open `index.ipynb`.
