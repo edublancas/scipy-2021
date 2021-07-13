@@ -88,6 +88,7 @@ The previous pipeline has a single task (`script.py`) and generates two outputs:
 **Let's now build a simple four-step pipeline**:
 
 ```yaml
+# copy this YAML into playground/pipeline.yaml
 tasks:
   - source: scripts/get.py
     product:
@@ -141,7 +142,10 @@ Image('playground/pipeline.png')
 ```
 
 <!-- #region -->
-Our pipeline doesn't have any structure yet, but we can easily add it. We want to:
+
+**Our pipeline doesn't have any structure yet, but we can easily add it.**
+
+We want to:
 
 1. Get data
 2. Process it
@@ -165,11 +169,11 @@ This special variable indicates which tasks should execute before the notebook w
 upstream = ['get']
 ```
 
-#### Step 3: Replace `upstream = None` with `upstream = ['get']` in `playground/scripts/features-petal.py`
+#### Step 3: In `playground/scripts/features-petal.py`, replace `upstream = None` with `upstream = ['get']`
 
 So far, we've told ploomber that it should run `get.py` before `features-petal.py`. But we cannot execute this interactively, since we don't know where `get.py` is saving its output, but we can quickly fix that.
 
-#### Step 4: On `playground/scripts/features-petal.py`, save the file, then click on `File` -> `Reload Python File from Disk`:
+#### Step 4: In `playground/scripts/features-petal.py`, save the file, then click on `File` -> `Reload Python File from Disk`:
 
 ![reload-file](images/reload-file.png)
 
